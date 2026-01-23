@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 7</title>
+  <style>
+    circle{
+    filter: drop-shadow(0 0 15px gold);
+    fill: radial-gradient(circle, #fff3a0, gold, orange);
+    }
+  </style>
+</head>
+<body>
+
+<svg width="300" height="300" style="border:1px solid black">
+    <circle cx="150" cy="150" r="30"
+        fill="orange">
+    <animate
+      attributeName="r"
+      from="30"
+      to="75"
+      dur="2s"
+      repeatCount="indefinite"
+      direction="alternate" />
+    </circle>
+
+</svg>
+
+</body>
+</html>
