@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+  <svg id="kid" width="300" height="400" style="cursor: pointer;">
+    
+    <circle cx="150" cy="80" r="35" fill="#F4D03F">
+      <animateTransform 
+        attributeName="transform" 
+        type="translate" 
+        from="0 0" 
+        to="0 -40" 
+        begin="kid.mouseover" 
+        end="kid.mouseout" 
+        dur="0.4s" 
+        fill="freeze" 
+      />
+    </circle>
+    
+    <rect x="110" y="115" width="80" height="90" rx="15" fill="#E74C3C" />
+
+    <line x1="110" y1="125" x2="60" y2="165" stroke="#8D6E63" stroke-width="9" stroke-linecap="round">
+      <animateTransform 
+        attributeName="transform" 
+        type="translate" 
+        from="0 0" 
+        to="-40 -40" 
+        begin="kid.mouseover" 
+        end="kid.mouseout" 
+        dur="0.4s" 
+        fill="freeze" 
+      />
+    </line>
+
+    <line x1="190" y1="125" x2="240" y2="165" stroke="#8D6E63" stroke-width="9" stroke-linecap="round">
+      <animateTransform 
+        attributeName="transform" 
+        type="translate" 
+        from="0 0" 
+        to="40 -40" 
+        begin="kid.mouseover" 
+        end="kid.mouseout" 
+        dur="0.4s" 
+        fill="freeze" 
+      />
+    </line>
+
+    <line x1="130" y1="205" x2="130" y2="280" stroke="#8D6E63" stroke-width="9" stroke-linecap="round">
+      <animateTransform 
+        attributeName="transform" 
+        type="translate" 
+        from="0 0" 
+        to="-20 30" 
+        begin="kid.mouseover" 
+        end="kid.mouseout" 
+        dur="0.4s" 
+        fill="freeze" 
+      />
+    </line>
+
+    <line x1="170" y1="205" x2="170" y2="280" stroke="#8D6E63" stroke-width="9" stroke-linecap="round">
+      <animateTransform 
+        attributeName="transform" 
+        type="translate" 
+        from="0 0" 
+        to="20 30" 
+        begin="kid.mouseover" 
+        end="kid.mouseout" 
+        dur="0.4s" 
+        fill="freeze" 
+      />
+    </line>
+
+    <text x="110" y="340" font-family="monospace" font-size="20" fill="#333">Shy Kid</text>
+
+  </svg>
+
+</body>
+</html>
