@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{
+    background:#6b5aa6;
+    font-family: Arial, sans-serif;
+  }
+
+  .container{
+    display:flex;
+    gap:40px;
+    justify-content:center;
+    margin-top:40px;
+  }
+
+  svg{
+    background:#E0F7FA;
+    border-radius:20px;
+  }
+
+  text{
+    fill:#444;
+    font-size:14px;
+    text-anchor:middle;
+  }
+</style>
+</head>
+
+<body>
+
+<h2 style="text-align:center;color:white;">
+  HTML & CSS Interactive Graphics Lab
+</h2>
+
+<div class="container">
+
+
+<svg width="300" height="220">
+
+
+  <rect x="60" y="40" width="180" height="60" rx="10" fill="blue"></rect>
+
+  
+  <circle cx="150" cy="140" r="20" fill="orange">
+    <animate
+      attributeName="cy"
+      from="140"
+      to="125"
+      dur="1s"
+      repeatCount="indefinite"
+      direction="alternate"/>
+  </circle>
+
+  <text x="150" y="190">Hover and Animate</text>
+</svg>
+
+<svg width="300" height="220">
+
+  <g>
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 150 100"
+      to="360 150 100"
+      dur="4s"
+      repeatCount="indefinite"/>
+
+    <circle cx="150" cy="100" r="45" fill="green"/>
+    <line x1="110" y1="60" x2="190" y2="140"
+          stroke="red" stroke-width="5"/>
+  </g>
+
+  <text x="150" y="190">Css Rotation</text>
+</svg>
+
+</div>
+
+</body>
+</html>

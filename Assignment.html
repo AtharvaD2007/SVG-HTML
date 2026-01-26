@@ -1,0 +1,65 @@
+
+<html>
+<body>
+
+<svg id="card" width="600" height="400"
+    viewBox="0 0 600 400"
+    style="background:#68b5bf; border-radius:20px; cursor:pointer;">
+    
+<rect x="50" y="50" width="120" height="70" rx="6" fill="blue">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      from="0 0"
+      to="-25 -20"
+      begin="card.mouseover"
+      end="card.mouseout"
+      dur="0.8s"
+      fill="remove"/>
+  </rect>
+
+
+  <circle cx="260" cy="80" r="35" fill="purple">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      from="0 0"
+      to="25 -25"
+      begin="card.mouseover"
+      end="card.mouseout"
+      dur="0.8s"
+      fill="remove"/>
+  </circle>
+
+
+  <line x1="420" y1="50" x2="520" y2="120"
+        stroke="black" stroke-width="4">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      from="0 0"
+      to="30 30"
+      begin="card.mouseover"
+      end="card.mouseout"
+      dur="0.8s"
+      fill="remove"/>
+  </line>
+  <circle cx="90" cy="270" r="26" fill="orange">
+
+  <animate
+    attributeName="cx"
+    from="90"
+    to="200"
+    begin="card.mouseover"
+    dur="0.5s"
+    fill="freeze" />
+
+  
+
+</circle>
+
+
+</svg>
+
+</body>
+</html>
