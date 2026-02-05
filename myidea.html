@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cracker</title>
+    <style>
+        body{
+            margin: 0;
+            height:100vh;
+            background: radial-gradient(circle at bottom, #1a0f91, #000000, #12005e);
+            overflow: hidden;
+        }
+        .triangle{
+            position: relative;
+            top: 60%;
+            left: 40%;
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 200px solid #ff3cac;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.6));
+            z-index: 3;
+
+            
+            animation:float 3s alternate;
+            
+        }
+        
+        .line{
+            position: relative;
+            top:56%;
+            left:45.7%;
+            width:30px;
+            height:100px;
+            background: rgb(125, 110, 119);
+            border: 2px solid black;
+            animation:float1 3s alternate;
+            z-index: 5;
+
+        }
+        .circle2{
+            position:relative;
+            top:21%;
+            left:40%;
+            width:200px;
+            height:40px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, #ff3cac, #784ba0, #2b86c5);
+            border: 2px solid black;
+            animation:float2 3s  alternate;
+            z-index: 4;
+
+        }
+        .circle{
+            width:8px;
+            height:8px;
+            background:rgb(205, 205, 205);
+            border-radius:50%;
+            position:absolute;
+            left: 46%;top:70%;
+            animation:bounce 2s alternate;
+            animation-delay: 2s;
+            box-shadow: 0 0 8px white, 0 0 15px pink;
+            z-index: 1;
+            color:white;
+            font-size: 30px;
+
+            
+        }
+        .c1{left: 46%;top:70%;animation:bounce1 2s  alternate;animation-delay: 3s;}
+        .c2{ left: 46%;top:70%;animation:bounce2 2s  alternate;animation-delay: 3s;}
+        .c3{ left: 46%;top:70%;animation:bounce3 2s  alternate;animation-delay: 3s;}
+        .c4{ left: 46%;top:70%;animation:bounce4 2s  alternate;animation-delay: 3s;}
+        .c5{ left: 46%;top:70%;animation:bounce5 2s  alternate;animation-delay: 3s;}
+        .c6{ left: 46%;top:70%;animation:bounce6 2s  alternate;animation-delay: 3s;}
+        .c7{ left: 46%;top:70%; animation:bounce7 2s  alternate;animation-delay: 3s;}
+        .c8{ left: 46%;top:70%;animation:bounce8 2s  alternate;animation-delay: 3s;}
+        .c9{ left: 46%;top:70%; animation:bounce9 2s  alternate;animation-delay: 3s;}
+        .c10{ left: 46%;top:70%;animation:bounce10 2s  alternate;animation-delay: 3s;}
+        .c11{ left: 46%;top:70%;animation:bounce11 2s  alternate;animation-delay: 3s;}
+        .c1{background:red;}
+        .c2{background:yellow;}
+        .c3{background:cyan;}
+        .c4{background:lime;}
+        .c5{background:pink;}
+        .c6{background:orange;}
+        .c7{background:violet;}
+
+
+
+        @keyframes float{
+            from{top:60%;}
+            to{top:70%;}
+        }
+        @keyframes float1{
+            from{top:56%;}
+            to{top:66%;}
+        }
+        @keyframes float2{
+            from{top:21%;}
+            to{top:31%;}
+        }
+        @keyframes bounce{
+            from{top:70; opacity:0;}
+            to{top:15%;opacity: 1;}
+        }
+        @keyframes bounce1{
+            from{top:70%; opacity:0;}
+            to{top:25%;left:35%;opacity: 1;}
+        }
+        @keyframes bounce2{
+            from{top:70%; opacity:0;}
+            to{top:35%;left:25%;opacity: 1;}
+        }
+        @keyframes bounce3{
+            from{top:70%; opacity:0;}
+            to{top:45%;left:15%;opacity: 1;}
+        }
+        @keyframes bounce4{
+            from{top:70%; opacity:0;}
+            to{top:45%;left:85%;opacity: 1;}
+        }
+        @keyframes bounce5{
+            from{top:70%; opacity:0;}
+            to{top:35%;left:75%;opacity: 1;}
+        }
+
+        @keyframes bounce6{
+            from{top:70%; opacity:0;}
+            to{top:25%;left:65%;opacity: 1;}
+        }
+        @keyframes bounce7{
+            from{top:70%; opacity:0;}
+            to{top:15%;left :50%;opacity: 1;}
+        }
+        @keyframes bounce8{
+            from{top:100%; opacity:0;}
+            to{top:-20%;opacity: 1;}
+        }
+        @keyframes bounce9{
+            from{top:100%; opacity:0;}
+            to{top:-20%;opacity: 1;}
+        }
+        @keyframes bounce10{
+            from{top:100%; opacity:0;}
+            to{top:-20%;opacity: 1;}
+        }@keyframes bounce11{
+            from{top:100%; opacity:0;}
+            to{top:-20%;opacity: 1;}
+        }
+        .text{
+            font-size: 100px;
+            font-weight: 100%;
+            color: #ff3cac;
+            position:absolute;
+            top:10%;
+            left:20%;
+            opacity:0;
+            animation:text 2s alternate;
+            animation-delay: 4s;
+            
+
+        }
+       
+    
+
+
+
+    </style>
+</head>
+<body>
+    <div class="triangle"></div>
+    <div class="line"></div>
+    <div class="circle"></div>
+        <div class="circle c1">H</div>
+        <div class="circle c2">A</div>
+        <div class="circle c3">P</div>
+        <div class="circle c4">P</div>
+        <div class="circle c5">Y</div>
+        <div class="circle c6">B</div>
+        <div class="circle c7">I</div>
+        <div class="circle c8">R</div>
+        <div class="circle c9">T</div>
+        <div class="circle c10">H</div>
+        <div class="circle c11">D</div>
+
+    <div class="circle2"></div>
+   
+    
+</body>
+</html>
